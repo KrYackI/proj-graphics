@@ -26,7 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda create -n cgal_env python==3.9
-        source activate base
+        conda init --all
         conda activate cgal_env
         conda install -c conda-forge cgal
         conda install -c fredboudon -c conda-forge pyqglviewer
